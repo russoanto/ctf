@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FILE_INFO>
+    <BASIC_INFO>
+        <STATE NAME="CONTENT_TYPE" TYPE="string" VALUE="ProgramUserData" />
+        <STATE NAME="PARENT" TYPE="string" VALUE="/" />
+        <STATE NAME="FILE_ID" TYPE="string" VALUE="ac14a5a92d5649530069794" />
+        <STATE NAME="FILE_TYPE" TYPE="int" VALUE="0" />
+        <STATE NAME="READ_ONLY" TYPE="boolean" VALUE="false" />
+        <STATE NAME="NAME" TYPE="string" VALUE="udf_c0a81666824b9334891711090" />
+    </BASIC_INFO>
+</FILE_INFO>

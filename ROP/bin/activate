@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/arusso/Documenti/ROP"
+VIRTUAL_ENV="/home/arusso/Documenti/ctf/ROP"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

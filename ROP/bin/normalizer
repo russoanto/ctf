@@ -1,4 +1,4 @@
-#!/home/arusso/Documenti/ROP/bin/python3
+#!/home/arusso/Documenti/ctf/ROP/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
