@@ -17,4 +17,31 @@ Questo è il gadget che mi permette di scrivere il contenuto del registro AL in 
 - [x] rdi: ho la pop
 
 ### Mie considerazioni
-Allora 
+Ho trovato qualcosa di interessante sui registri segment di cui fanno parte ds ed es:
+Segment registers
+
+Segment registers hold the segment address of various items. They are only available in 16 values. They can only be set by a general register or special instructions. Some of them are critical for the good execution of the program and you might want to consider playing with them when you'll be ready for multi-segment programming
+
+CS         : Holds the Code segment in which your program runs.
+             Changing its value might make the computer hang.
+
+DS         : Holds the Data segment that your program accesses.
+             Changing its value might give erronous data.
+
+ES,FS,GS   : These are extra segment registers available for
+             far pointer addressing like video memory and such.
+
+SS         : Holds the Stack segment your program uses.
+             Sometimes has the same value as DS.
+             Changing its value can give unpredictable results,
+             mostly data related.
+
+#### DS
+Usando GDB noto che il registro datasegment è vuoto quindi potenzialmente mi basta imostare un offset che in realtà è il registro di dove voglio scrivere.
+
+#### Starting address 
+Per individuare l'indirizzo iniziale di un binario da gdb posso dare il comando
+`info proc mappings`
+
+#### Punto chiave
+Leggendo la documentazione di xlat ho avuto l'illuminazione, non posso io inserire flag.txt perchè xlat richiede di inserire nel registro al il valore contenuto in un altra area di memoria. Ma se io riesco ad inseire flag.txt in un area di memoria allora non ho bisogno di passare per il regitro AL. Il punto in questa sfida è che io non ho nessun modo per inserire queta sitringa in memoria così com'è, quello che devo fare è individuare nel file i caratteri che compongono la parola 'flag.txt' ed uno per uno li inserisco nel registro AL. Da qui il gioco è fatto (spero) 

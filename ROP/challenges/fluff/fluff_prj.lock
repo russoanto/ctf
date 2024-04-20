@@ -1,9 +1,9 @@
 #Ghidra Lock File
-#Sat Apr 13 09:42:50 CEST 2024
+#Sat Apr 20 18:58:19 CEST 2024
 <META>\ Supports\ File\ Channel\ Locking=Channel Lock
 Hostname=archbox
 OS\ Architecture=amd64
 OS\ Name=Linux
-OS\ Version=6.8.2-arch2-1
-Timestamp=4/13/24, 9\:42\u202FAM
+OS\ Version=6.8.5-arch1-1
+Timestamp=4/20/24, 6\:58\u202FPM
 Username=arusso
